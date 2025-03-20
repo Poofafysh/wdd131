@@ -1,0 +1,55 @@
+@media screen and (min-width: 768px) {
+    header {
+        padding: 0.5rem 1rem;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        position: static;
+        background: #4a2c6a;
+        width: auto;
+        height: auto;
+        right: auto;
+        transition: none;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0;
+    }
+
+    .nav-menu li {
+        margin: 0 1rem;
+    }
+
+    .nav-menu a {
+        font-size: 1rem;
+        padding: 0.5rem;
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav-menu a:hover {
+        background-color: #5a3c7a;
+        border-radius: 4px;
+    }
+
+    main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    footer {
+        position: static;
+        margin-top: 1rem;
+    }
+}
