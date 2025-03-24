@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Information about Cairo, Egypt, including data and weather.">
+    <meta name="author" content="Aidan Burton">
     <title>Cairo, Egypt</title>
     <link rel="stylesheet" href="Styles/base.css">
     <script src="Scripts/weather.js" defer></script>
@@ -13,8 +15,8 @@
     </header>
     <main>
         <picture>
-            <source media="(min-width: 600px)" srcset="Images/Cairo-Pyramids.webp">
-            <img src="Images/Cairo-Pyramids.webp" alt="Cairo cityscape with pyramids">
+            <source media="(min-width: 600px)" srcset="Images/cairo-pyramids-large.webp">
+            <img src="Images/cairo-pyramids-small.webp" alt="Cairo cityscape with pyramids">
         </picture>
         <section class="data">
             <h2>Data</h2>
@@ -29,7 +31,7 @@
         </section>
         <section class="weather">
             <h2>Weather <span class="weather-icon">⛅</span></h2>
-            <img src="Images/wheather-icon.svg" alt="Weather icon" class="weather-svg">
+            <img src="Images/weather-icon.svg" alt="Weather icon" class="weather-svg">
             <p><span>Temperature:</span> 10°C</p>
             <p><span>Conditions:</span> Partly Cloudy</p>
             <p><span>Wind:</span> 5 km/h</p>
@@ -37,7 +39,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; <span id="current-year"></span> Aidan Burton 🌍 Hillsboro, Oregon</p>
+        <p>© <span id="current-year"></span> Aidan Burton 🌍 Hillsboro, Oregon</p>
         <p>Last Modification: <span id="last-modified"></span></p>
     </footer>
 </body>
