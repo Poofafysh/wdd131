@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cairo, Egypt</title>
+    <link rel="stylesheet" href="Styles/base.css">
+    <script src="Styles/base.css" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Cairo, Egypt</h1>
+    </header>
+    <main>
+        <picture>
+            <source media="(min-width: 600px)" srcset="Images/Cairo-Pyramids.webp">
+            <img src="Images/Cairo-Pyramids.webp" alt="Cairo cityscape with pyramids">
+        </picture>
+        <section class="data">
+            <h2>Data</h2>
+            <p><span>Area:</span> 3,085 sq km</p>
+            <p><span>Population:</span> 9,500,000</p>
+            <p><span>Capital:</span> Cairo</p>
+            <p><span>Languages:</span> Arabic</p>
+            <p><span>Currency:</span> Egyptian Pound</p>
+            <p><span>Time Zone:</span> EET (UTC+2)</p>
+            <p><span>Calling Code:</span> +20</p>
+            <p><span>Internet TLD:</span> .eg</p>
+        </section>
+        <section class="weather">
+            <h2>Weather <span class="weather-icon">⛅</span></h2>
+            <img src="Images/wheather-icon.svg" alt="Weather icon" class="weather-svg">
+            <p><span>Temperature:</span> 10°C</p>
+            <p><span>Conditions:</span> Partly Cloudy</p>
+            <p><span>Wind:</span> 5 km/h</p>
+            <p><span>Wind Chill:</span> <span id="windchill">N/A</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="current-year"></span> Aidan Burton 🌍 Hillsboro, Oregon</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
