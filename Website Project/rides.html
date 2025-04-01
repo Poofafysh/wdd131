@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rides - Hillsboro Sports Bike Club</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css" media="screen and (min-width: 768px)">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Hillsboro Sports Bike Club</h1>
+        <nav>
+            <button class="hamburger" aria-label="Toggle menu">☰</button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rides.html" class="active">Rides</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Upcoming Rides</h1>
+        <div class="filter">
+            <label for="difficulty-filter">Filter by Difficulty:</label>
+            <select id="difficulty-filter">
+                <option value="all">All</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+        <div class="ride-list" id="ride-cards"></div>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> Hillsboro Sports Bike Club | <a href="references.html">References</a></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/scripts.js" defer></script>
+</body>
+</html>

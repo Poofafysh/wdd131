@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join - Hillsboro Sports Bike Club</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css" media="screen and (min-width: 768px)">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Hillsboro Sports Bike Club</h1>
+        <nav>
+            <button class="hamburger" aria-label="Toggle menu">☰</button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rides.html">Rides</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Join the Club</h1>
+        <form id="membership-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="bike">Bike Model (400cc+):</label>
+            <input type="text" id="bike" name="bike" required>
+
+            <label for="experience">Riding Experience:</label>
+            <select id="experience" name="experience" required>
+                <option value="">Select...</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="expert">Expert</option>
+            </select>
+
+            <button type="submit">Join Now</button>
+        </form>
+        <p id="form-message"></p>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> Hillsboro Sports Bike Club | <a href="references.html">References</a></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/scripts.js" defer></script>
+</body>
+</html>

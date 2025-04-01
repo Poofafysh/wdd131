@@ -1,0 +1,196 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+header {
+    background-color: #d32f2f;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+.hamburger {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    display: none;
+}
+
+.nav-menu.active {
+    display: block;
+}
+
+.nav-menu li {
+    margin: 10px 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+    color: #ffeb3b;
+}
+
+main {
+    padding: 20px;
+    padding-bottom: 100px; 
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero-image-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-image-container img {
+    width: 25%; 
+    max-width: 300px; 
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.hero h2, .mission h2, .featured-ride h2 {
+    color: #d32f2f;
+}
+
+.filter {
+    margin-bottom: 20px;
+}
+
+.ride-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.ride-card {
+    display: flex;
+    border: 1px solid #ddd;
+    padding: 10px;
+    align-items: center;
+    background-color: #333;
+}
+
+.ride-card img {
+    width: 150px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.ride-card div {
+    text-align: left;
+}
+
+.ride-card h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #d32f2f;
+}
+
+.ride-card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.featured-ride-card {
+    display: flex;
+    flex-direction: row-reverse;
+    border: 1px solid #ddd;
+    padding: 10px;
+    align-items: center;
+    background-color: #333;
+}
+
+.featured-ride-card img {
+    width: 150px;
+    height: auto;
+    margin-left: 15px;
+}
+
+.featured-ride-card div {
+    text-align: left;
+}
+
+.featured-ride-card h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #d32f2f;
+}
+
+.featured-ride-card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: 700;
+}
+
+form input, form select {
+    padding: 8px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #b71c1c;
+}
+
+footer {
+    background-color: #d32f2f;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative; 
+    width: 100%;
+}
+
+footer a {
+    color: #ffeb3b;
+}

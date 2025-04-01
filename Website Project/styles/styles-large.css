@@ -1,0 +1,31 @@
+@media screen and (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .nav-menu li {
+        margin: 0;
+    }
+
+    .ride-list {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+
+    .ride-card img, .featured-ride-card img {
+        width: 200px;
+    }
+
+    .ride-card h3, .featured-ride-card h3 {
+        font-size: 18px;
+    }
+
+    .ride-card p, .featured-ride-card p {
+        font-size: 16px;
+    }
+}

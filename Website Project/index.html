@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hillsboro Sports Bike Club</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css" media="screen and (min-width: 768px)">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Hillsboro Sports Bike Club</h1>
+        <nav>
+            <button class="hamburger" aria-label="Toggle menu">☰</button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="rides.html">Rides</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/hero-bike.jpg" alt="Hillsboro Sports Bike Club members riding" loading="lazy">
+            <h2>Welcome to the Club!</h2>
+            <p>Join us for thrilling sports bike rides in Hillsboro, Oregon. We ride, we connect, we have fun!</p>
+        </section>
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>We’re a community of sports bike enthusiasts dedicated to safe, exciting group rides in the Hillsboro area. Whether you’re a seasoned rider or new to the scene, we welcome all bikes 400cc and up.</p>
+        </section>
+        <section class="featured-ride">
+            <h2>Featured Ride</h2>
+            <div id="featured-ride-card"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> Hillsboro Sports Bike Club | <a href="references.html">References</a></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/scripts.js" defer></script>
+</body>
+</html>
