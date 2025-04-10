@@ -12,7 +12,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: var(--background-color);
     color: var(--secondary-color);
     line-height: 1.6;
@@ -29,6 +29,14 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+picture {
+    flex: 2;
+    min-width: 300px;
 }
 
 picture img {
@@ -41,6 +49,8 @@ section {
     margin: 1rem 0;
     padding: 1rem;
     border: 1px solid var(--secondary-color);
+    flex: 1;
+    min-width: 300px;
 }
 
 h2 {
@@ -67,29 +77,4 @@ footer {
     color: var(--background-color);
     text-align: center;
     padding: 1rem;
-}
-
-
-@media (min-width: 600px) {
-    main {
-        display: flex;
-        gap: 1rem;
-    }
-
-    picture {
-        flex: 2;
-    }
-
-    .data, .weather {
-        flex: 1;
-    }
-
-    .weather-svg {
-        display: none;
-    }
-
-    .weather h2::after {
-        content: '⛅';
-        margin-left: 0.5rem;
-    }
 }
